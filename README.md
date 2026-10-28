@@ -34,8 +34,9 @@ per-generation digest revalidation, bounded structured generation, durable
 usage evidence, and privacy/cleanup checks. The v2 graph caps one run at 16
 tickets, four research shards, two concurrent researchers, two revisions, ten
 role calls, and 900 seconds before publication. This sanitized source copy is
-prepared for a separate GitHub repository; no service has been deployed and no
-runtime port has been exposed beyond loopback.
+published at [littledv/Agent_Forge](https://github.com/littledv/Agent_Forge);
+no service has been deployed and no runtime port has been exposed beyond
+loopback.
 
 The current checkpoint is recorded in [PROJECT_PLAN.md](PROJECT_PLAN.md), and
 the latest session state is recorded in [HANDOVER.md](HANDOVER.md).
@@ -402,8 +403,8 @@ foreach ($path in $generated) {
 
 ## Privacy and publication
 
-This publication copy starts with fresh Git history, uses a GitHub noreply
-commit identity, replaces captured replay-worker metadata with a synthetic
-identity, and includes the MIT license. Repository publication is separate from
-application deployment: no service has been deployed and no runtime port has
-been exposed beyond loopback.
+The public `littledv/Agent_Forge` repository starts with fresh Git history, uses
+a GitHub noreply commit identity, replaces captured replay-worker metadata with
+a synthetic identity, and includes the MIT license. Repository publication is
+separate from application deployment: no service has been deployed and no
+runtime port has been exposed beyond loopback.

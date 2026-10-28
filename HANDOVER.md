@@ -9,14 +9,15 @@ and user-approved. Its five roadmap tasks and checkpoint gate are complete.
 The user explicitly skipped optional Milestone 9 on 2026-10-28. The selected
 local portfolio-project scope is therefore complete.
 
-This is the sanitized publication copy at `E:\Agent_Forge`. It was exported
-from the latest private source snapshot without the original Git history. The
-two Temporal replay fixtures use a synthetic worker identity, the repository
-includes the MIT license, and the new Git history uses the authenticated
-GitHub account's noreply address. The original `littledv/agentforge` repository
-was left unchanged except for its separately requested MIT license commit.
-Nothing was deployed, no paid resource was created, and no port was published
-beyond loopback.
+This is the sanitized publication copy at `E:\Agent_Forge`, published publicly
+at `https://github.com/littledv/Agent_Forge`. It was exported from the latest
+private source snapshot without the original Git history. The two Temporal
+replay fixtures use a synthetic worker identity, the repository includes the
+MIT license, and the new Git history uses the authenticated GitHub account's
+noreply address. The original `littledv/agentforge` repository was left
+unchanged except for its separately requested MIT license commit. Nothing was
+deployed, no paid resource was created, and no port was published beyond
+loopback.
 
 ## Delivered behavior
 
@@ -112,6 +113,10 @@ The sanitized publication copy was freshly verified on 2026-10-28:
   personal Windows user paths were absent from the sanitized tree.
 - The fresh repository has no imported `.git` directory, refs, reflogs, or
   alternates from the private source repository.
+- GitHub displayed `littledv/Agent_Forge` as public with one branch, one intended
+  human contributor, the MIT license, and the sanitized source commit. The
+  remote `main` hash exactly matched the local `main` hash after the initial
+  push.
 
 ## Known caveat
 
@@ -160,7 +165,7 @@ suite passed. This variance remains recorded rather than being hidden.
 
 ## Exact next action
 
-Create the separate `littledv/Agent_Forge` GitHub repository as private, push
-the verified sanitized commit, and perform the final repository-visibility
-change only after action-time user confirmation. Milestone 9 remains skipped;
-source publication does not authorize application deployment.
+No source-publication work remains. Keep the original `littledv/agentforge`
+repository as the private first copy, and keep Milestone 9 skipped unless the
+user separately reopens deployment work. Public source availability does not
+mean the application has been deployed.

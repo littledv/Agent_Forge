@@ -27,6 +27,8 @@ long-lived roadmap.
 - [x] Documentation baseline created and mechanically verified.
 - [x] Local Git commit author and metadata verified.
 - [x] Private remote explicitly approved and created.
+- [x] Separate sanitized public source repository explicitly approved, created,
+      and verified.
 - [x] Milestone 1 implementation explicitly approved.
 - [x] Milestone 1 checkpoint reviewed and approved.
 - [x] Milestone 2 checkpoint reviewed and approved.
