@@ -1,0 +1,2 @@
+Customer cannot export the monthly usage report. The export remains pending and
+no download link appears.

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools==84.2.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentforge"
+version = "0.1.0"
+description = "A local-first durable AI agent runtime"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "alembic==1.20.1",
+  "fastapi==0.158.1",
+  "httpx==0.28.1",
+  "psycopg[binary,pool]==3.3.6",
+  "pydantic==2.14.1",
+  "SQLAlchemy[asyncio]==2.1.6",
+  "temporalio==1.33.0",
+  "uvicorn==0.53.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==9.1.1",
+  "pytest-asyncio==1.4.0",
+]
+
+[project.scripts]
+agentforge-api = "agentforge.api:main"
+agentforge-relay = "agentforge.relay:main"
+agentforge-worker = "agentforge.worker:main"
+agentforge-inbox = "agentforge.inbox_api:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "--strict-markers"
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = [
+  "integration: requires the local PostgreSQL or Temporal services",
+]

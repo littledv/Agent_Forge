@@ -1,0 +1,2 @@
+Customer cannot find the password reset instructions after the sign-in page was
+updated.
